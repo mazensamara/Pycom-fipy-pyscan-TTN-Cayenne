@@ -28,7 +28,7 @@ pycom.rgbled(0x0000FF) # Blue
 
 # Connect to wifi to get time
 wlan = WLAN(mode=WLAN.STA)
-wlan.connect(ssid='PI', auth=(WLAN.WPA2, 'PI123456'))
+wlan.connect(ssid='YOUR SSID', auth=(WLAN.WPA2, 'YOUR PASSWORD'))
 while not wlan.isconnected():
     machine.idle()
 time.sleep(1)
@@ -66,14 +66,14 @@ lis2hh12 = LIS2HH12() # 3-Axis Accelerometer
 lora = LoRa(mode=LoRa.LORAWAN, region=LoRa.US915)
 
 # create an OTAA authentication parameters, change them to the provided credentials
-app_eui = ubinascii.unhexlify('0000000000000000')
-app_key = ubinascii.unhexlify('AAA4221A6ECB981003757D07D532B9FA')
+app_eui = ubinascii.unhexlify('YOUR app_eui')
+app_key = ubinascii.unhexlify('YOUR app_key')
 #uncomment to use LoRaWAN application provided dev_eui
-dev_eui = ubinascii.unhexlify('70b3d5499101f604')
+dev_eui = ubinascii.unhexlify('YOUR dev_eui')
 
 
 # Get device info
-dev_eui = ubinascii.unhexlify('70b3d5499101f604')
+dev_eui = ubinascii.unhexlify('YOUR dev_eui')
 print('\n') 
 print("** DevEUI: %s" % (ubinascii.hexlify(lora.mac())))
 print('\n') 
