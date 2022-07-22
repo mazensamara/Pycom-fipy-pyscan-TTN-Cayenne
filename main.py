@@ -4,7 +4,7 @@
 # later version, with permitted additional terms. For more information
 # see the Pycom Licence v1.0 document supplied with this file, or
 # available at https://www.pycom.io/opensource/licensing
-# See https://docs.pycom.io for more information regarding library specif
+# See https://docs.pycom.io for more information regarding library 
 
 
 import machine
