@@ -1,1 +1,11 @@
 # Pycom-fipy-pyscan-TTN-Cayenne
+- Sending data to TTN from Pycom boards.
+- Sending sata from TTN to Cayenne
+- Using FIPY and PYSCAN.
+- Connecting to WIFI and LORA.
+- Sending Battery voltage to TTN.
+- Sending acceleration, roll and pitch to TTN.
+- Sending lumen and lux to TTN.
+- Sending Acceleration to Cayenne.
+- Sending lumen and lux to Cayenne.
+- Using LPP payload formatter for TTN.
